@@ -1,0 +1,27 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package object;
+import javax.swing.JOptionPane;
+/**
+ *
+ * @author LENOVO
+ */
+public class persegi {
+    int sisi, luas, keliling;
+
+    public persegi() {
+        this.sisi = sisi;
+    }
+
+    public void luas(int sisi) {
+        luas = sisi * sisi;
+        JOptionPane.showMessageDialog(null, "luas persegi anda: " + luas);
+    }
+
+    public void keliling(int sisi) {
+        keliling = 4 * sisi;
+        JOptionPane.showMessageDialog(null, "Keliling persegi anda: " + keliling);
+    }
+}
