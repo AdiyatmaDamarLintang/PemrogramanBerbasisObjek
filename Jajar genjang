@@ -1,0 +1,32 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package object;
+
+import javax.swing.JOptionPane;
+
+/**
+ *
+ * @author LENOVO
+ */
+public class jajar {
+
+    int alas, miring, tinggi, luas, keliling;
+
+    public jajar() {
+        this.alas = alas;
+        this.miring = miring;
+        this.tinggi = tinggi;
+    }
+
+    public void luas(int alas, int tinggi) {
+        luas = alas * tinggi;
+        JOptionPane.showMessageDialog(null, "luas jajar genjang anda: " + luas);
+    }
+
+    public void keliling(int alas, int miring) {
+        keliling = (2 * alas) + (2 * miring);
+        JOptionPane.showMessageDialog(null, "Keliling jajar genjang anda: " + keliling);
+    }
+}
