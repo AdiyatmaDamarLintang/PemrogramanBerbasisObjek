@@ -1,0 +1,46 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package object;
+
+import javax.swing.JOptionPane;
+
+/**
+ *
+ * @author LENOVO
+ */
+public class tampilkan {
+
+    public static void main(String[] args) {
+        persegipanjang pp = new persegipanjang();
+        pp.panjang = Integer.parseInt(JOptionPane.showInputDialog("Panjang persegi panjang: "));
+        pp.lebar = Integer.parseInt(JOptionPane.showInputDialog("Lebar persegi panjang: "));
+        pp.luas(pp.panjang, pp.lebar);
+        pp.keliling(pp.panjang, pp.lebar);
+
+        persegi p = new persegi();
+        p.sisi = Integer.parseInt(JOptionPane.showInputDialog("Sisi persegi: "));
+        p.luas(p.sisi);
+        p.keliling(p.sisi);
+
+        jajar j = new jajar();
+        j.alas = Integer.parseInt(JOptionPane.showInputDialog("Alas jajar genjang: "));
+        j.miring = Integer.parseInt(JOptionPane.showInputDialog("Sisi Miring jajar genjang: "));
+        j.tinggi = Integer.parseInt(JOptionPane.showInputDialog("Tinggi jajar genjang: "));
+        j.keliling(j.alas, j.miring);
+        j.luas(j.alas, j.tinggi);
+
+        lingkaran l = new lingkaran();
+        l.r = Double.parseDouble(JOptionPane.showInputDialog("jari jari lingkaran: "));
+        l.luas(l.r);
+        l.keliling(l.r);
+
+        segitiga s = new segitiga();
+        s.alas = Double.parseDouble(JOptionPane.showInputDialog("alas segitiga: "));
+        s.tinggi = Double.parseDouble(JOptionPane.showInputDialog("tinggi segtiiga adalah: "));
+        s.miring = Double.parseDouble(JOptionPane.showInputDialog("sisi miring: "));
+        s.luas(s.alas, s.tinggi);
+        s.keliling(s.alas, s.tinggi, s.miring);
+    }
+}
