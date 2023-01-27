@@ -1,0 +1,30 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ */
+package object;
+
+import javax.swing.JOptionPane;
+
+/**
+ *
+ * @author LENOVO
+ */
+public class lingkaran {
+
+    Double phi = 3.14, r, luas, keliling;
+
+    public lingkaran() {
+        this.r = r;
+    }
+
+    public void luas(Double r) {
+        luas = phi * r * r;
+        JOptionPane.showMessageDialog(null, "luas lingkaran anda: " + luas);
+    }
+
+    public void keliling(Double r) {
+        keliling = phi * (2 * r);
+        JOptionPane.showMessageDialog(null, "Keliling lingkaran anda: " + keliling);
+    }
+}
