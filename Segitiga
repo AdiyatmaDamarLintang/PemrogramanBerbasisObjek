@@ -1,0 +1,32 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package object;
+
+import javax.swing.JOptionPane;
+
+/**
+ *
+ * @author LENOVO
+ */
+public class segitiga {
+
+    Double alas, tinggi, miring, luas, keliling;
+
+    public segitiga() {
+        this.alas = alas;
+        this.tinggi = tinggi;
+        this.miring = miring;
+    }
+
+    public void luas(Double alas, Double tinggi) {
+        luas = alas * tinggi / 2;
+        JOptionPane.showMessageDialog(null, "luas segitiga anda: " + luas);
+    }
+
+    public void keliling(Double alas, Double tinggi, Double miring) {
+        keliling = alas + miring + tinggi;
+        JOptionPane.showMessageDialog(null, "Keliling segitiga anda: " + keliling);
+    }
+}
